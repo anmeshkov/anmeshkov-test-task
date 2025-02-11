@@ -1,14 +1,17 @@
 // =========================
 // Colors Variables
 // =========================
-$primary-color: #C2A776;
+$primary-color: #C2AB81;
 $secondary-color: #FFFFFF;
 $background-color: #131313;
 $text-color: #FFFFFF;
-$card-bg: #151515;
+$post-bg: #ffffff;
 $button-text-color: #000000;
 $border-color: #333333;
 $font-color-primary: #ffffff;
+$font-color-secondary: #171717;
+$font-color-gray: #666666;
+
 
 // =========================
 // Fonts Variables
@@ -18,6 +21,7 @@ $font-size-base: 16px;
 $font-size-extra: 42px;
 $font-size-large: 24px;
 $font-size-small: 14px;
+$font-size-xs: 12px;
 $font-weight-bold: 700;
 $font-weight-normal: 400;
 
@@ -53,3 +57,8 @@ $animation: 0.2s ease-out;
 // =========================
 $skew: -15deg;
 $button-text-color: #ffffff;
+$button-primary-color: #C2AB81;
+$button-secondary-color: #131313;
+$button-border-color: #ffffff;
+$button-hover-color: #d3b681;
+$button-animation: left 0.5s;

@@ -12,3 +12,10 @@
 .nav {
   flex-grow: 1;
 }
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}

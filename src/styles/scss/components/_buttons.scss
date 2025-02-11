@@ -1,6 +1,6 @@
 .button {
-  // width: 200px;
-  // height: 100px;
+  width: 282px;
+  height: 60px;
   padding: 21px 75px;
   transform: skew($skew);
   display: inline-flex;
@@ -14,6 +14,26 @@
   text-align: center;
   text-transform: uppercase;
   color: $button-text-color;
+  border: 1px solid;
+
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $button-hover-color;
+    transition: $button-animation;
+  }
+
+  &:hover::before {
+    left: 0;
+  }
 
   &>span {
     transform: skew(-$skew);
@@ -21,15 +41,37 @@
 }
 
 .button-primary {
-  border: 1px solid #C2A776;
-  background-color: #C2A776;
+  border-color: $button-primary-color;
+  background-color: $button-primary-color;
+  transition: border-color $animation;
+  position: relative;
 
   &:hover {
-    background-color: #dec088;
+    border-color: $button-hover-color;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    background-color: $button-border-color;
+    height: 100%;
+    width: 10px;
   }
 }
 
 .button-secondary {
-  border: 1px solid #000;
-  background-color: #000;
+  width: 92px;
+  padding: 0;
+  border-color: $button-border-color;
+  background-color: $button-secondary-color;
+  opacity: 0.4;
+  transition: opacity border-color $animation;
+
+  &:hover {
+    border-color: $button-hover-color;
+    opacity: 1;
+  }
 }

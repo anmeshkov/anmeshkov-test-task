@@ -1,0 +1,100 @@
+.post {
+  background-color: $post-bg;
+  width: 320px;
+  color: $font-color-secondary;
+  font-weight: 400;
+
+
+  &__image {
+    height: 185px;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__tags {
+    font-weight: 700;
+    font-size: $font-size-small;
+    line-height: 1.85714;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: $font-size-base;
+    line-height: 1.625;
+  }
+
+  &__content {
+    font-size: $font-size-small;
+    line-height: 1.71429;
+    color: $font-color-gray;
+  }
+
+  &__author {
+    font-weight: 400;
+    font-size: $font-size-xs;
+    line-height: 2;
+  }
+
+  &__button {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #171717;
+    background-color: #171717;
+    color: #FFFFFF;
+    transition: background-color $animation;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #171717;
+    }
+  }
+}
+
+.post-header {}
+
+.post-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 23px;
+}
+
+.tags-wrapper {
+
+  &__list {
+    list-style: none;
+
+  }
+
+  &__item {}
+
+  &__link {
+    text-decoration: none;
+    color: $font-color-secondary;
+    transition: color $animation;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.author-wrapper {
+
+  &__link {
+    font-weight: 700;
+  }
+
+  &__datetime {}
+}
+
+.author-link {}
