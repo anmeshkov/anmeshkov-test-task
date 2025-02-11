@@ -1,0 +1,35 @@
+.button {
+  // width: 200px;
+  // height: 100px;
+  padding: 21px 75px;
+  transform: skew($skew);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: $button-text-color;
+
+  &>span {
+    transform: skew(-$skew);
+  }
+}
+
+.button-primary {
+  border: 1px solid #C2A776;
+  background-color: #C2A776;
+
+  &:hover {
+    background-color: #dec088;
+  }
+}
+
+.button-secondary {
+  border: 1px solid #000;
+  background-color: #000;
+}

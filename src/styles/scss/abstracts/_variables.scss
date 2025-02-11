@@ -1,17 +1,55 @@
-// colors
+// =========================
+// Colors Variables
+// =========================
 $primary-color: #C2A776;
 $secondary-color: #FFFFFF;
 $background-color: #131313;
-$text-color: #E0E0E0;
+$text-color: #FFFFFF;
 $card-bg: #151515;
 $button-text-color: #000000;
 $border-color: #333333;
 $font-color-primary: #ffffff;
 
-// fonts
-$font-primary: 'Arial', sans-serif;
+// =========================
+// Fonts Variables
+// =========================
+$font-primary: 'Montserrat', sans-serif;
 $font-size-base: 16px;
+$font-size-extra: 42px;
 $font-size-large: 24px;
 $font-size-small: 14px;
 $font-weight-bold: 700;
 $font-weight-normal: 400;
+
+// =========================
+// Spacing Variables
+// =========================
+$spacer: 15px;
+$spacer-half: calc($spacer / 2);
+$spacer-double: calc($spacer * 2);
+
+// =========================
+// Breakpoint Variables
+// =========================
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// =========================
+// Border Radius Variables
+// =========================
+$border-radius-extra: 60px;
+
+// =========================
+// Custom Variables
+// =========================
+$container-max-width: 1720px;
+$animation: 0.2s ease-out;
+
+// =========================
+// Buttons Variables
+// =========================
+$skew: -15deg;
+$button-text-color: #ffffff;

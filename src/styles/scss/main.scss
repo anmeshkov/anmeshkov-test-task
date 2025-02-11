@@ -1,7 +1,14 @@
 // main.scss
 @import './base/reset';
+@import './base/typography';
 @import './abstracts/variables';
 @import './base/base';
 
+// components
+@import './components/logo';
+@import './components/buttons';
+
 // layout
 @import './layout/header';
+@import './layout/navigation';
+@import './layout/hero';

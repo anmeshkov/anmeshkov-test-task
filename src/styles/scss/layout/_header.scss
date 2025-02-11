@@ -1,0 +1,14 @@
+.header {
+
+  &__wrapper {
+    display: flex;
+    justify-content:  flex-start;
+    align-items: center;
+    padding: 28px 0;
+    gap: 76px;
+  }
+}
+
+.nav {
+  flex-grow: 1;
+}
