@@ -17,22 +17,22 @@
   border: 1px solid;
 
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
   &::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     display: block;
-    width: 100%;
+    width: 0;
     height: 100%;
     background-color: $button-hover-color;
-    transition: $button-animation;
+    transition: width $button-animation;
   }
 
   &:hover::before {
-    left: 0;
+    width: 100%;
   }
 
   &>span {
@@ -54,7 +54,7 @@
     content: '';
     display: block;
     position: absolute;
-    right: 10px;
+    right: -15px;
     top: 0;
     background-color: $button-border-color;
     height: 100%;

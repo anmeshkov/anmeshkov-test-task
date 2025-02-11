@@ -1,8 +1,9 @@
 .post {
   background-color: $post-bg;
-  width: 320px;
+  width: $post-width;
   color: $font-color-secondary;
   font-weight: 400;
+  transition: transform 0.2s ease;
 
 
   &__image {
