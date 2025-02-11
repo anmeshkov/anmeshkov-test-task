@@ -52,6 +52,9 @@
     background-color: #171717;
     color: #FFFFFF;
     transition: background-color $animation;
+    font-weight: 600;
+    font-size: $font-size-small;
+    font-family: 'Mulish';
 
     &:hover {
       background-color: #ffffff;
@@ -65,8 +68,8 @@
 .post-body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 25px 23px;
+  gap: 21px;
+  padding: 25px 23px 30px 23px;
 }
 
 .tags-wrapper {
