@@ -1,5 +1,9 @@
 .posts-section {
   padding: 130px 0;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    padding-top: 17px;
+  }
 }
 
 .section-title {

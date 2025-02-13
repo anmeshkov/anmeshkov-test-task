@@ -1,7 +1,6 @@
 .button {
-  width: 262px;
   height: 60px;
-  padding: 21px 25px;
+  padding: 21px 5px;
   margin-left: 10px;
   margin-right: 10px;
   transform: skew($skew);
@@ -43,6 +42,9 @@
 }
 
 .button-primary {
+  max-width: 262px;
+  min-width: 180px;
+  width: 100%;
   border-color: $button-primary-color;
   background-color: $button-primary-color;
   transition: border-color $animation;
@@ -66,11 +68,16 @@
 
 .button-secondary {
   width: 72px;
+  flex: 0 0 auto;
   padding: 0;
   border-color: $button-border-color;
   background-color: $button-secondary-color;
   opacity: 0.4;
   transition: opacity border-color $animation;
+
+  @media screen and (max-width: $breakpoint-xxl) {
+    margin: 0;
+  }
 
   &:hover {
     border-color: $button-hover-color;
@@ -85,6 +92,7 @@
   &__toggle {
     width: 50px;
     height: 50px;
+    flex: 0 0 auto;
     background: none;
     padding: 5px;
     border: none;

@@ -12,6 +12,10 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: $breakpoint-lg) {
+    height: 930px;
+  }
+
   &::before {
     content: '';
     display: block;
@@ -38,6 +42,10 @@
   gap: 40px;
   z-index: 9;
 
+  @media screen and (max-width: $breakpoint-lg) {
+    max-width: 500px;
+  }
+
   &__title {
     font-family: $font-primary;
     font-weight: 700;
@@ -45,10 +53,18 @@
     text-transform: uppercase;
     color: $secondary-color;
     line-height: 1.2;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: $font-size-xl2;
+    }
   }
 
   &__text {
     opacity: 0.79;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      max-width: 450px;
+    }
   }
 
   &__buttton {}

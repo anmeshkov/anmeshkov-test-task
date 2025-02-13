@@ -41,4 +41,10 @@
   justify-content: flex-end;
   gap: 12px;
   margin-right: 10px;
+  width: 100%;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    gap: 0;
+    margin-left: 25px;
+  }
 }
