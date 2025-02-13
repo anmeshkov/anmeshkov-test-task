@@ -1,0 +1,38 @@
+.main {
+  position: relative;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  color: $background-color;
+  background-color: $background-color;
+  padding: 60px 0;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: $font-size-xl;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 1px $font-stroke-color;
+    text-shadow:
+      -1px -1px 0 $font-stroke-color,
+      1px -1px 0 $font-stroke-color,
+      -1px 1px 0 $font-stroke-color,
+      1px 1px 0 $font-stroke-color;
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
