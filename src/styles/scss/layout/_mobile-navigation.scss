@@ -15,6 +15,10 @@
 
   &__list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
   }
 
   &__item {
@@ -30,6 +34,11 @@
       1px -1px 0 $font-stroke-color,
       -1px 1px 0 $font-stroke-color,
       1px 1px 0 $font-stroke-color;
+
+    :hover {
+      -webkit-text-stroke: 0px;
+      text-shadow: none
+    }
   }
 
   &__link {

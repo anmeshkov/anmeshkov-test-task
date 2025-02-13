@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   background-color: $background-color;
   color: $font-color-primary;
@@ -23,4 +27,16 @@ a {
   &:hover {
     color: $primary-color;
   }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
