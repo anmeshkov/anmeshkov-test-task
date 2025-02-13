@@ -7,7 +7,28 @@
     padding-top: 28px;
     padding-bottom: 28px;
     gap: 76px;
+
+    @media screen and (max-width: $breakpoint-xxl) {
+      justify-content:  space-between;
+    }
   }
+
+  &__nav {
+    flex: 0 0 auto;
+
+    @media screen and (max-width: $breakpoint-xxl) {
+      display: none;
+    }
+  }
+
+  &__menu-toggle {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-xxl) {
+      display: block;
+    }
+  }
+
 }
 
 .nav {

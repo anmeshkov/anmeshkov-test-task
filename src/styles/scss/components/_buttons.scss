@@ -77,3 +77,53 @@
     opacity: 1;
   }
 }
+
+
+
+.mobile-nav {
+
+  &__toggle {
+    width: 50px;
+    height: 50px;
+    background: none;
+    padding: 5px;
+    border: none;
+  }
+
+  &__toggle-icon, &__toggle-icon::before, &__toggle-icon::after {
+    display: block;
+    border-radius: 10px;
+    background-color: $burger-button-color;
+    transition: background-color $animation;
+  }
+
+  &__toggle:hover {
+    & > *, > *:before, & > *:after {
+      background-color: $burger-button-color-hover;
+    }
+  }
+
+  &__toggle-icon {
+    position: relative;
+    width: 31px;
+    height: 3px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 16px;
+      height: 3px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 22px;
+      height: 2px;
+    }
+  }
+}

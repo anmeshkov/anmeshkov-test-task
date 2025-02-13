@@ -11,6 +11,8 @@ $border-color: #333333;
 $font-color-primary: #ffffff;
 $font-color-secondary: #171717;
 $font-color-gray: #666666;
+$burger-button-color: #ffffff;
+$burger-button-color-hover: #C2AB81;
 
 
 // =========================
@@ -66,4 +68,14 @@ $button-animation: 0.5s;
 // =========================
 // Post Variables
 // =========================
-$post-width: 320px
+$post-width: 320px;
+
+// =========================
+// Breakpoint Variables
+// =========================
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1600px;
