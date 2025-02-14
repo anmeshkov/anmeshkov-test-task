@@ -1,8 +1,6 @@
 import './styles/scss/main.scss';
 import './index.html';
 
-console.log('anmeshkov test task');
-
 document.querySelector('#mobile-nav-button').addEventListener('click', () => {
   document.querySelector('#mobile-nav-menu').classList.toggle('hide');
   document.querySelector('body').classList.toggle('no-scroll');

@@ -16,6 +16,11 @@
     height: 930px;
   }
 
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 495px;
+    padding: 52px 0;
+  }
+
   &::before {
     content: '';
     display: block;
@@ -46,6 +51,11 @@
     max-width: 500px;
   }
 
+  @media screen and (max-width: $breakpoint-sm) {
+    max-width: 260px;
+    gap: 20px;
+  }
+
   &__title {
     font-family: $font-primary;
     font-weight: 700;
@@ -57,6 +67,10 @@
     @media screen and (max-width: $breakpoint-lg) {
       font-size: $font-size-xl2;
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 20px;
+    }
   }
 
   &__text {
@@ -65,7 +79,17 @@
     @media screen and (max-width: $breakpoint-lg) {
       max-width: 450px;
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: $font-size-small;
+    }
+
   }
 
-  &__buttton {}
+  &__buttton {
+    @media screen and (max-width: $breakpoint-sm) {
+      max-width: 204px;
+        height: 47px;
+    }
+  }
 }
