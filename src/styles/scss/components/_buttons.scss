@@ -55,6 +55,10 @@
   transition: border-color $animation;
   position: relative;
 
+  @media screen and (max-width: $breakpoint-xs) {
+    width: auto;
+  }
+
   &:hover {
     border-color: $button-hover-color;
   }
