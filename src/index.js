@@ -1,5 +1,6 @@
 import './styles/scss/main.scss';
 import './index.html';
+import './js/fetch.js';
 
 document.querySelector('#mobile-nav-button').addEventListener('click', () => {
   document.querySelector('#mobile-nav-menu').classList.toggle('hide');
