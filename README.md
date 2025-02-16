@@ -1,1 +1,0 @@
-anmeshkov test task
