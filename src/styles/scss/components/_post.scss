@@ -5,6 +5,9 @@
   font-weight: 400;
   transition: transform 0.2s ease;
 
+  display: flex;
+  flex-direction: column;
+
 
   &__image {
     height: 185px;
@@ -29,6 +32,7 @@
     font-weight: 400;
     font-size: $font-size-base;
     line-height: 1.625;
+    text-transform: capitalize;
 
     @media screen and (max-width: $breakpoint-sm) {
       width: 80%;
@@ -39,6 +43,8 @@
     font-size: $font-size-small;
     line-height: 1.71429;
     color: $font-color-gray;
+    flex-grow: 1;
+    text-transform: capitalize;
 
     @media screen and (max-width: $breakpoint-sm) {
       width: 99%;
@@ -82,6 +88,7 @@
   display: flex;
   flex-direction: column;
   gap: 21px;
+  flex-grow: 1;
   padding: 25px 23px 30px 23px;
 
   @media screen and (max-width: $breakpoint-sm) {
