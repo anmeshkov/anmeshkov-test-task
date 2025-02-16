@@ -54,12 +54,16 @@
 .mobile {
 
   &__contacts {
+    display: none;
     margin-top: 50px;
-    display: flex;
     flex-direction: column;
     gap: 5px;
     padding-left: 25px;
     padding-right: 25px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      display: flex;
+    }
 
     & .button {
       padding: 0;
