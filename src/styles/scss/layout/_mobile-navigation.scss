@@ -39,9 +39,39 @@
       -webkit-text-stroke: 0px;
       text-shadow: none
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 20px;
+    }
   }
 
   &__link {
     color: inherit;
   }
+}
+
+
+.mobile {
+
+  &__contacts {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    & .button {
+      padding: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+    & .button-secondary {
+    }
+    & .button-primary::after {
+      display: none;
+    }
+
+  }
+
 }
